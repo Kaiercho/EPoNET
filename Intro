@@ -1,0 +1,13 @@
+EPoNET: An Efficient Point Network for LiDAR Point Cloud Perception in Large-scale Scene
+
+With the ongoing advancement and wide application of Light Detection And Ranging (LiDAR) technology, the efficient deployment of deep learning models in various offline edge scenarios, 
+such as autonomous vehicles and drones, has become an important research hotspot in industry and academia. How to achieve lightweight and efficient network model (light and fast) on edge
+devices with limited resources is the key point. Model quantization methods, benefiting from lightweight parameters, have become one of the most promising approaches for model compression 
+and acceleration. However, due to the unstructured characteristic of the point cloud, quantization may lead to aggregation-induced feature homogenization and structural scale distortion, 
+resulting in performance bottlenecks for quantization models. Moreover, unstructured point cloud cannot adapt to existing image processing quantization methods. Moreover, unstructured point 
+cloud is difficult to adapt to existing image processing quantification methods and require a completely new network architecture. To this end, we constructed a specialized point cloud
+quantization network and designed an effective feature extraction architecture, proposing an efficient point network named EPoNET. Specifically, to address the issues of feature homogenization
+and limited feature discriminability after quantization, we designed the dual refining kernel and local feature reshaping module to refine and expand the features. To tackle the significant 
+class imbalance within the dataset, we  designed the weighted loss function to enhance the effectiveness of the network training and mitigate the interference caused by local optima during 
+training. Finally, we validated the proposed EPoNET in real-world large-scale multispectral LiDAR point cloud scene. Our EPoNET achieved a perception accuracy exceeding 90%, while bringing 
+the expected effects of 5.7 times inference acceleration and 58.4% usage savings compared to the benchmark, achieving a trade-off between inference accuracy and computational consumption.
